@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Data Binding</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+    <!-- 
+		Data binding in AngularJS, synchronizes AngularJS expressions with AngularJS data.
+
+		{{ firstName }} is synchronized with ng-model="firstName".
+
+		In the next example two text fields are synchronized with two ng-model directives:
+     -->
+	<div ng-app="" ng-init="quantity=1;price=5">
+
+	Quantity: <input type="number"	ng-model="quantity">
+	Costs:    <input type="number" ng-model="price">
+
+	Total in dollar: {{ quantity * price }}
+
+	</div>
+</body>
+</html>
