@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repeating HTML Elements</title>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-init="names=['Jani','Hege','Kai']">
+	  <ul>
+	    <li ng-repeat="x in names">
+	      {{ x }}
+	    </li>
+	  </ul>
+	</div>
+</body>
+</html>
